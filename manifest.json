@@ -1,8 +1,8 @@
 ﻿{
-  "name" : "InsertCSS",
+  "name" : "EQupup",
   "version" : "1.0.0",
   "manifest_version": 2,
-  "description" : "Insert CSS file to current page.",
+  "description" : "survive EQ , may the world peace",
   "background" : {
     "scripts" : ["background.js"],
     "persistent" : true
@@ -13,7 +13,7 @@
       "19" : "css_128.png",
       "38" : "css_128.png"
     },
-    "default_title" : "Insert CSS"
+    "default_title" : "EQupup"
   },
   "content_security_policy" : "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-eval'; img-src *",
   "permissions" : [
