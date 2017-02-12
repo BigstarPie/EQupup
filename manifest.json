@@ -1,16 +1,22 @@
 {
   "manifest_version": 2,
-
   "name": "EQupup",
-  "description": "may the world peace",
+  "description": "Secretary's secret button",
   "version": "1.0",
-
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_popup": "EQupup.html"
   },
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+        "tabs",
+        "<all_urls>"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["transfer.js"]
+  }]
 }
